@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="iOS/UITrial1.iOS.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPadAir.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITrial1/MyPage.cs">
+    <Files>
+      <File FileName="UITrial1/MyPage.cs" Line="22" Column="24" />
+      <File FileName="UITrial1/UITrial1.cs" Line="1" Column="1" />
+      <File FileName="UITrial1/GridMainScreen.cs" Line="1" Column="1" />
+      <File FileName="UITrial1/AcceptPaymentView.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
