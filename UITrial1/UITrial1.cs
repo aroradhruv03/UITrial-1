@@ -2,15 +2,21 @@
 
 using Xamarin.Forms;
 
-namespace UITrial1
-{
-	public class App : Application
+public class App : Application
 	{
+		public static MasterDetailPage MasterDetailPage;
+
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new MyPage();
+		MainPage = new GridLoginPage();
+//			MainPage = new NavigationPage(new AcceptPaymentView());
 
+//			MasterDetailPage = new MasterDetailPage {
+//				Master = new MenuPage(),
+//			Detail = new NavigationPage(new MyPage()),
+//			};
+//			MainPage = MasterDetailPage;
 		}
 
 		protected override void OnStart ()
@@ -28,5 +34,3 @@ namespace UITrial1
 			// Handle when your app resumes
 		}
 	}
-}
-

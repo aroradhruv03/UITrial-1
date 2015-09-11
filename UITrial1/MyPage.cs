@@ -2,17 +2,15 @@
 
 using Xamarin.Forms;
 
-namespace UITrial1
-{
-	public class MyPage : ContentPage
+public class MyPage : ContentPage
 	{
 		public MyPage()
 		{
-//			GridMainScreen S = new GridMainScreen ();
-//			this.Content = S;
-//			BackgroundColor = Color.FromRgb(75,118,209);
+		GridAcceptPaymentScreen S = new GridAcceptPaymentScreen ();
+			this.Content = S;
+		BackgroundColor = Color.Gray;
 
-			createTable ();
+//			createTable ();
 		}
 
 		public void createTable()
@@ -106,7 +104,6 @@ namespace UITrial1
 			};
 		}
 	}
-}
 
 
 
