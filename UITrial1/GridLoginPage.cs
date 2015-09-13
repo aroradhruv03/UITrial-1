@@ -8,7 +8,7 @@ public class GridLoginPage : ContentPage
 		{
 			GridLoginScreen S = new GridLoginScreen ();
 						this.Content = S;
-						BackgroundColor = Color.FromRgb(75,118,209);
+		BackgroundColor = Color.FromHex ("1976D2");
 		}
 	}
 

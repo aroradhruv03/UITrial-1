@@ -8,7 +8,7 @@ public class MyPage : ContentPage
 		{
 		GridAcceptPaymentScreen S = new GridAcceptPaymentScreen ();
 			this.Content = S;
-		BackgroundColor = Color.Gray;
+		BackgroundColor = Color.FromHex("E3F2FD");
 
 //			createTable ();
 		}

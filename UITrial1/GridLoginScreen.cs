@@ -1,28 +1,45 @@
 ﻿using System;
 using Xamarin.Forms;
 
+
 public class GridLoginScreen : Grid
 {
 	public GridLoginScreen ()
 	{
 		var label1 = new Label {
 			Text = "Process payments from your tablet.",
-			HorizontalOptions = LayoutOptions.Center
+			HorizontalOptions = LayoutOptions.Center,
+			VerticalOptions = LayoutOptions.End,
+			TextColor = Color.White,
+			Font = Font.SystemFontOfSize(NamedSize.Large),
+			FontAttributes = FontAttributes.Bold
 		};
 		var label2 = new Label {
 			Text = "Quickly and securely.",
-			HorizontalOptions = LayoutOptions.Center
+			HorizontalOptions = LayoutOptions.Center,
+			VerticalOptions = LayoutOptions.Start,
+			TextColor = Color.White,
+			Font = Font.SystemFontOfSize(NamedSize.Medium),
 		};
 		var label3 = new Label {
 			Text = "Bolletta",
-			VerticalOptions = LayoutOptions.Center
+			VerticalOptions = LayoutOptions.Center,
+			HorizontalOptions = LayoutOptions.Start,
+			TextColor = Color.FromHex("FF9800"),
+			Font = Font.SystemFontOfSize(NamedSize.Medium),
+
 		};
 		var label4 = new Label {
-			Text = "Mobile Cashier",
-			VerticalOptions = LayoutOptions.Center
+			Text = "MOBILE CASHIER",
+			VerticalOptions = LayoutOptions.Center,
+			HorizontalOptions = LayoutOptions.Start,
+			TextColor = Color.Gray,
+			Font = Font.SystemFontOfSize(NamedSize.Micro),
 		};
 		var label5 = new Label {
-			Text = "Please enter your Username and Password to sign in"
+			Text = "Please enter your Username and Password to sign in",
+			TextColor = Color.Gray,
+			VerticalOptions = LayoutOptions.End,
 		};
 
 //		var label6 = new Label {
@@ -41,28 +58,32 @@ public class GridLoginScreen : Grid
 		};
 
 		var bolettaImage = new Image {
-			Source = "http://a4.mzstatic.com/us/r30/Purple4/v4/02/8d/e2/028de2c0-0a91-9e68-0b61-5a7f7fae4577/icon175x175.png"
+			Source = "http://a4.mzstatic.com/us/r30/Purple4/v4/02/8d/e2/028de2c0-0a91-9e68-0b61-5a7f7fae4577/icon175x175.png",
+			HeightRequest = 10,
+			WidthRequest = 10,
 		};
 
 		Button buttonForgotPass = new Button {
 			Text = "Forgot Password",
-			TextColor = Color.Black,
+			TextColor = Color.White,
 			BorderColor = Color.Black,
+			BackgroundColor = Color.FromHex("2196F3"),
 			BorderWidth = 1
 		};
 		buttonForgotPass.Clicked += OnForgotPassClicked;
 
 		Button buttonSignIn = new Button {
 			Text = "Sign In",
-			TextColor = Color.Black,
+			TextColor = Color.White,
 			BorderColor = Color.Black,
+			BackgroundColor = Color.FromHex("2196F3"),
 			BorderWidth = 1,
 			Command = new Command(() => Navigation.PushModalAsync(new MyPage()))
 		};
 //		buttonSignIn.Clicked += OnSignInClicked;
 //			var bg = Color.White;
 
-		StackLayout st = new StackLayout { BackgroundColor = Color.White,
+		StackLayout st = new StackLayout { BackgroundColor = Color.FromHex("E3F2FD"),
 		};
 
 
@@ -74,13 +95,13 @@ public class GridLoginScreen : Grid
 			new RowDefinition (),	// Row 1-2
 			new RowDefinition (),	// Row 2-3
 			new RowDefinition (),	// Row 3-4
-			new RowDefinition (),	// Row 4-5
-			new RowDefinition (),	// Row 5-6
-			new RowDefinition (),	// Row 6-7
-			new RowDefinition (),	// Row 7-8
-			new RowDefinition (),	// Row 8-9
-			new RowDefinition (),	// Row 9-10
-			new RowDefinition (),	// Row 10-11
+			new RowDefinition { Height = new GridLength(30) },	// Row 4-5
+			new RowDefinition { Height = new GridLength(30) },	// Row 5-6
+			new RowDefinition { Height = new GridLength(30) },	// Row 6-7
+			new RowDefinition { Height = new GridLength(30) },	// Row 7-8
+			new RowDefinition { Height = new GridLength(30) },	// Row 8-9
+			new RowDefinition { Height = new GridLength(30) },	// Row 9-10
+			new RowDefinition { Height = new GridLength(30) },	// Row 10-11
 			new RowDefinition (),	// Row 11-12
 			new RowDefinition (),	// Row 12-13
 		};
@@ -107,7 +128,8 @@ public class GridLoginScreen : Grid
 		Children.Add (buttonSignIn, 4, 5, 10, 11);
 	}
 
-	void OnForgotPassClicked(object sender, EventArgs e)
+
+	static void OnForgotPassClicked(object sender, EventArgs e)
 	{
 		
 	}
