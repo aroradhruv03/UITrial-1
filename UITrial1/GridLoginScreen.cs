@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 
 
+
 public class GridLoginScreen : Grid
 {
 	public GridLoginScreen ()
@@ -11,7 +12,7 @@ public class GridLoginScreen : Grid
 			HorizontalOptions = LayoutOptions.Center,
 			VerticalOptions = LayoutOptions.End,
 			TextColor = Color.White,
-			Font = Font.SystemFontOfSize(NamedSize.Large),
+			Font = Font.SystemFontOfSize (NamedSize.Large),
 			FontAttributes = FontAttributes.Bold
 		};
 		var label2 = new Label {
@@ -19,14 +20,14 @@ public class GridLoginScreen : Grid
 			HorizontalOptions = LayoutOptions.Center,
 			VerticalOptions = LayoutOptions.Start,
 			TextColor = Color.White,
-			Font = Font.SystemFontOfSize(NamedSize.Medium),
+			Font = Font.SystemFontOfSize (NamedSize.Medium),
 		};
 		var label3 = new Label {
 			Text = "Bolletta",
 			VerticalOptions = LayoutOptions.Center,
 			HorizontalOptions = LayoutOptions.Start,
-			TextColor = Color.FromHex("FF9800"),
-			Font = Font.SystemFontOfSize(NamedSize.Medium),
+			TextColor = Color.FromHex ("FF9800"),
+			Font = Font.SystemFontOfSize (NamedSize.Medium),
 
 		};
 		var label4 = new Label {
@@ -34,7 +35,7 @@ public class GridLoginScreen : Grid
 			VerticalOptions = LayoutOptions.Center,
 			HorizontalOptions = LayoutOptions.Start,
 			TextColor = Color.Gray,
-			Font = Font.SystemFontOfSize(NamedSize.Micro),
+			Font = Font.SystemFontOfSize (NamedSize.Micro),
 		};
 		var label5 = new Label {
 			Text = "Please enter your Username and Password to sign in",
@@ -67,23 +68,27 @@ public class GridLoginScreen : Grid
 			Text = "Forgot Password",
 			TextColor = Color.White,
 			BorderColor = Color.Black,
-			BackgroundColor = Color.FromHex("2196F3"),
+			BackgroundColor = Color.FromHex ("2196F3"),
 			BorderWidth = 1
 		};
 		buttonForgotPass.Clicked += OnForgotPassClicked;
+//		buttonForgotPass.Clicked += async (sender, e) => {
+//			var action = await Page.DisplayActionSheet ("ActionSheet: Save Photo?", "Cancel", "Delete", "Photo Roll", "Email");
+//			Debug.WriteLine("Action: " + action); // writes true or false to the console
+//		};
 
 		Button buttonSignIn = new Button {
 			Text = "Sign In",
 			TextColor = Color.White,
 			BorderColor = Color.Black,
-			BackgroundColor = Color.FromHex("2196F3"),
+			BackgroundColor = Color.FromHex ("2196F3"),
 			BorderWidth = 1,
-			Command = new Command(() => Navigation.PushModalAsync(new MyPage()))
+			Command = new Command (() => Navigation.PushModalAsync (new MyPage ()))
 		};
 //		buttonSignIn.Clicked += OnSignInClicked;
 //			var bg = Color.White;
 
-		StackLayout st = new StackLayout { BackgroundColor = Color.FromHex("E3F2FD"),
+		StackLayout loginSquare = new StackLayout { BackgroundColor = Color.FromHex ("E3F2FD"),
 		};
 
 
@@ -95,13 +100,13 @@ public class GridLoginScreen : Grid
 			new RowDefinition (),	// Row 1-2
 			new RowDefinition (),	// Row 2-3
 			new RowDefinition (),	// Row 3-4
-			new RowDefinition { Height = new GridLength(30) },	// Row 4-5
-			new RowDefinition { Height = new GridLength(30) },	// Row 5-6
-			new RowDefinition { Height = new GridLength(30) },	// Row 6-7
-			new RowDefinition { Height = new GridLength(30) },	// Row 7-8
-			new RowDefinition { Height = new GridLength(30) },	// Row 8-9
-			new RowDefinition { Height = new GridLength(30) },	// Row 9-10
-			new RowDefinition { Height = new GridLength(30) },	// Row 10-11
+			new RowDefinition { Height = new GridLength (30) },	// Row 4-5
+			new RowDefinition { Height = new GridLength (30) },	// Row 5-6
+			new RowDefinition { Height = new GridLength (30) },	// Row 6-7
+			new RowDefinition { Height = new GridLength (30) },	// Row 7-8
+			new RowDefinition { Height = new GridLength (30) },	// Row 8-9
+			new RowDefinition { Height = new GridLength (30) },	// Row 9-10
+			new RowDefinition { Height = new GridLength (30) },	// Row 10-11
 			new RowDefinition (),	// Row 11-12
 			new RowDefinition (),	// Row 12-13
 		};
@@ -115,7 +120,7 @@ public class GridLoginScreen : Grid
 			new ColumnDefinition { Width = new GridLength (5) },	// Column 6-7
 		};
 		// Specify in format (column start, column end, row start, row end);
-		Children.Add (st, 1, 6, 4, 12);
+		Children.Add (loginSquare, 1, 6, 4, 12);
 		Children.Add (label1, 2, 6, 1, 2);
 		Children.Add (label2, 2, 6, 2, 3);
 		Children.Add (bolettaImage, 2, 3, 5, 7);
@@ -129,13 +134,14 @@ public class GridLoginScreen : Grid
 	}
 
 
-	static void OnForgotPassClicked(object sender, EventArgs e)
+	async void OnForgotPassClicked (object sender, EventArgs e)
 	{
-		
+//				var action = await Page.DisplayActionSheet ("ActionSheet: Save Photo?", "Cancel", "Delete", "Photo Roll", "Email");
+//		Debug.WriteLine("Answer: " + answer); // writes true or false to the console
 	}
 
-//	void OnSignInClicked(object sender, EventArgs e)
-//	{
-//		Command = new Command (() => Navigation.PushAsync (new MyPage ()));
-//	}
+	//	void OnSignInClicked(object sender, EventArgs e)
+	//	{
+	//		Command = new Command (() => Navigation.PushAsync (new MyPage ()));
+	//	}
 }

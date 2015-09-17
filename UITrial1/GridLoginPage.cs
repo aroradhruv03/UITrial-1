@@ -3,14 +3,16 @@
 using Xamarin.Forms;
 
 public class GridLoginPage : ContentPage
+{
+	public GridLoginPage ()
 	{
-		public GridLoginPage ()
-		{
-			GridLoginScreen S = new GridLoginScreen ();
-						this.Content = S;
+		GridLoginScreen S = new GridLoginScreen ();
+		this.Content = S;
 		BackgroundColor = Color.FromHex ("1976D2");
-		}
 	}
+
+
+}
 
 
 

@@ -6,7 +6,7 @@
 	--sim \
 	/Users/dhruv/Projects/UITrial1/iOS/bin/iPhoneSimulator/Debug/UITrial1.iOS.app \
 	--executable \
-	UITrial1iOS \
+	UITrial1.iOS \
 	--debug \
 	--profiling \
 	--nolink \

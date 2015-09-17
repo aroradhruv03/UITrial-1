@@ -2,15 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPadAir.8.4" />
   <MonoDevelop.Ide.Workbench ActiveDocument="UITrial1/GridAcceptPaymentScreen.cs">
     <Files>
-      <File FileName="UITrial1/MyPage.cs" Line="1" Column="1" />
+      <File FileName="UITrial1/MyPage.cs" Line="11" Column="27" />
       <File FileName="UITrial1/UITrial1.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/GridLoginScreen.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/AcceptPaymentView.cs" Line="1" Column="1" />
+      <File FileName="UITrial1/GridLoginScreen.cs" Line="139" Column="118" />
       <File FileName="UITrial1/MenuPage.cs" Line="1" Column="1" />
       <File FileName="UITrial1/LinkPage.cs" Line="1" Column="1" />
       <File FileName="UITrial1/MainLink.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/GridLoginPage.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/GridAcceptPaymentScreen.cs" Line="48" Column="4" />
+      <File FileName="UITrial1/GridLoginPage.cs" Line="11" Column="46" />
+      <File FileName="UITrial1/GridAcceptPaymentScreen.cs" Line="42" Column="24" />
+      <File FileName="UITrial1/Behaviors/EmailValidatorBehavior.cs" Line="43" Column="2" />
+      <File FileName="UITrial1/Behaviors/NumberValidatorBehavior.cs" Line="38" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
