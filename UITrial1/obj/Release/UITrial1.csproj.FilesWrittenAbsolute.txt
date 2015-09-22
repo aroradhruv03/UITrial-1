@@ -1,0 +1,7 @@
+/Users/dhruv/Projects/UITrial1/UITrial1/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/dhruv/Projects/UITrial1/UITrial1/bin/Release/UITrial1.dll.mdb
+/Users/dhruv/Projects/UITrial1/UITrial1/bin/Release/UITrial1.dll
+/Users/dhruv/Projects/UITrial1/UITrial1/obj/Release/UITrial1.dll
+/Users/dhruv/Projects/UITrial1/UITrial1/obj/Release/UITrial1.dll.mdb
+/Users/dhruv/Projects/UITrial1/UITrial1/bin/Release/Xamarin.Forms.Core.dll
+/Users/dhruv/Projects/UITrial1/UITrial1/bin/Release/Xamarin.Forms.Xaml.dll

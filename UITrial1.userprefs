@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="iOS/UITrial1.iOS.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPadAir.8.4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UITrial1/GridAcceptPaymentScreen.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPadAir.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITrial1/UITrial1.cs">
     <Files>
-      <File FileName="UITrial1/MyPage.cs" Line="11" Column="27" />
-      <File FileName="UITrial1/UITrial1.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/GridLoginScreen.cs" Line="139" Column="118" />
-      <File FileName="UITrial1/MenuPage.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/LinkPage.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/MainLink.cs" Line="1" Column="1" />
-      <File FileName="UITrial1/GridLoginPage.cs" Line="11" Column="46" />
-      <File FileName="UITrial1/GridAcceptPaymentScreen.cs" Line="42" Column="24" />
-      <File FileName="UITrial1/Behaviors/EmailValidatorBehavior.cs" Line="43" Column="2" />
-      <File FileName="UITrial1/Behaviors/NumberValidatorBehavior.cs" Line="38" Column="2" />
+      <File FileName="UITrial1/AcceptPayPage.cs" Line="5" Column="27" />
+      <File FileName="UITrial1/UITrial1.cs" Line="14" Column="31" />
+      <File FileName="UITrial1/LoginGridView.cs" Line="6" Column="27" />
+      <File FileName="UITrial1/MenuPage.cs" Line="7" Column="24" />
+      <File FileName="UITrial1/LinkPage.cs" Line="10" Column="16" />
+      <File FileName="UITrial1/MainLink.cs" Line="4" Column="1" />
+      <File FileName="UITrial1/LoginPage.cs" Line="5" Column="23" />
+      <File FileName="UITrial1/AcceptPayGridView.cs" Line="5" Column="31" />
+      <File FileName="UITrial1/MenuListView.cs" Line="15" Column="3" />
+      <File FileName="UITrial1/MenuListData.cs" Line="23" Column="26" />
+      <File FileName="UITrial1/RootPage.cs" Line="15" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
